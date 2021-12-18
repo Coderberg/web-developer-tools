@@ -1,0 +1,46 @@
+{
+    "extends": [
+        "react-app",
+        "airbnb",
+        "plugin:jsx-a11y/recommended",
+        "prettier",
+        "plugin:testing-library/react"
+    ],
+    "plugins": [
+        "jsx-a11y",
+        "prettier",
+        "testing-library"
+    ],
+    "overrides": [
+        {
+            "files": ["**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+            "extends": ["plugin:testing-library/react"]
+        }
+    ],
+    "rules": {
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "no-use-before-define": "off",
+        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+        "testing-library/await-async-query": "error",
+        "testing-library/no-await-sync-query": "error",
+        "testing-library/no-debug": "warn",
+        "testing-library/no-dom-import": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
+}
