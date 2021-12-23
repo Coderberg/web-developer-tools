@@ -8,6 +8,11 @@ const Menubar: React.FC = () => {
             label: 'Chmod Calculator',
             icon: 'pi pi-angle-right',
             url: '#/chmod_calculator'
+        },
+        {
+            label: 'Unix Timestamp Converter',
+            icon: 'pi pi-clock',
+            url: '#/unix_timestamp_converter'
         }
     ];
 
