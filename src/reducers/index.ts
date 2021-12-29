@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
-import chmodCalculator from "./ChmodCalculator";
 import epochConverter from "./EpochConverter";
+import chmodCalculator from "./ChmodCalculator";
+import crontabGenerator from "./CrontabGenerator";
 
 const rootReducer = combineReducers({
     chmodCalculator,
-    epochConverter
+    epochConverter,
+    crontabGenerator
 })
 
 export default rootReducer

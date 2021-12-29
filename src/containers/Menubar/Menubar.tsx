@@ -10,6 +10,11 @@ const Menubar: React.FC = () => {
             url: '#/chmod_calculator'
         },
         {
+            label: 'Crontab Generator',
+            icon: 'pi pi-calendar',
+            url: '#/crontab_generator'
+        },
+        {
             label: 'Unix Timestamp Converter',
             icon: 'pi pi-clock',
             url: '#/unix_timestamp_converter'
