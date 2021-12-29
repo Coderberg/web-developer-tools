@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Coderberg/web-developer-tools/static/css/main.1b7b153a.css",
-    "main.js": "/Coderberg/web-developer-tools/static/js/main.68d75c98.js",
-    "static/media/primeicons.svg": "/Coderberg/web-developer-tools/static/media/primeicons.c6e2053303524e39530c.svg",
-    "static/media/bg.jpg": "/Coderberg/web-developer-tools/static/media/bg.ae3b937fcad9a5057e9d.jpg",
-    "static/media/primeicons.eot": "/Coderberg/web-developer-tools/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
-    "static/media/primeicons.woff": "/Coderberg/web-developer-tools/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
-    "static/media/primeicons.ttf": "/Coderberg/web-developer-tools/static/media/primeicons.91bacab1f083f2795272.ttf",
-    "index.html": "/Coderberg/web-developer-tools/index.html",
-    "main.1b7b153a.css.map": "/Coderberg/web-developer-tools/static/css/main.1b7b153a.css.map",
-    "main.68d75c98.js.map": "/Coderberg/web-developer-tools/static/js/main.68d75c98.js.map"
+    "main.css": "/web-developer-tools/static/css/main.2417f40a.css",
+    "main.js": "/web-developer-tools/static/js/main.012c9966.js",
+    "static/media/primeicons.svg": "/web-developer-tools/static/media/primeicons.c6e2053303524e39530c.svg",
+    "static/media/bg.jpg": "/web-developer-tools/static/media/bg.ae3b937fcad9a5057e9d.jpg",
+    "static/media/primeicons.eot": "/web-developer-tools/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
+    "static/media/primeicons.woff": "/web-developer-tools/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
+    "static/media/primeicons.ttf": "/web-developer-tools/static/media/primeicons.91bacab1f083f2795272.ttf",
+    "index.html": "/web-developer-tools/index.html",
+    "main.2417f40a.css.map": "/web-developer-tools/static/css/main.2417f40a.css.map",
+    "main.012c9966.js.map": "/web-developer-tools/static/js/main.012c9966.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b7b153a.css",
-    "static/js/main.68d75c98.js"
+    "static/css/main.2417f40a.css",
+    "static/js/main.012c9966.js"
   ]
 }
