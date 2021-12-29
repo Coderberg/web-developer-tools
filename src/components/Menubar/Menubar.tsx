@@ -9,6 +9,7 @@ const Menubar: React.FC<MenubarPropsType> = ({model, onLogoClick, onGitHubClick}
 
     const end = <Button label="GitHub" type="button" icon="pi pi-github"
                         className="p-button-outlined p-button-help"
+                        data-testid="GitHub"
                         onClick={onGitHubClick}/>;
 
     return <PrimeMenubar className="p-mb-6" model={model} start={start} end={end} />
