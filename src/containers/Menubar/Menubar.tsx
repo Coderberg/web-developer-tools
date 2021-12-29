@@ -25,7 +25,7 @@ const Menubar: React.FC = () => {
         window.location.hash = '/'
     };
     const onGitHubClick = () => {
-        window.open('https://github.com/Coderberg')
+        window.open('https://github.com/Coderberg/web-developer-tools')
     };
 
     return <Menu model={items} onLogoClick={onLogoClick}
