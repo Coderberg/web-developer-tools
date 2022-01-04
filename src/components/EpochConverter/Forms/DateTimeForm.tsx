@@ -11,16 +11,23 @@ const timeOptions = [
 
 const DateTimeForm: React.FC<DateTimeInputPropsInterface> =
     ({
-         dateTimeInputValue, timezoneInputValue,
-         onDateTimeChange, onTimezoneChange, onDateToEpochButtonClick, dateToEpochResult
+         dateTimeInputValue,
+         timezoneInputValue,
+         onDateTimeChange,
+         onTimezoneChange,
+         onDateToEpochButtonClick,
+         dateToEpochResult
      }) =>
         <>
             <form className="p-grid p-fluid p-mb-4">
                 <div className="p-col-12 p-md-4 p-sm-6">
-                    <Calendar value={dateTimeInputValue} onChange={onDateTimeChange} showTime showSeconds/>
+                    <Calendar value={dateTimeInputValue}
+                              onChange={onDateTimeChange} stepMinute={2}
+                              showTime showSeconds/>
                 </div>
                 <div className="p-col-12 p-md-3 p-sm-6">
-                    <Dropdown options={timeOptions} value={timezoneInputValue} onChange={onTimezoneChange}/>
+                    <Dropdown options={timeOptions} value={timezoneInputValue}
+                              onChange={onTimezoneChange}/>
                 </div>
                 <div className="p-col-12 p-md-5">
                     <Button label="Human date to Timestamp"
