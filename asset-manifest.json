@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/web-developer-tools/static/css/main.2417f40a.css",
-    "main.js": "/web-developer-tools/static/js/main.20b30428.js",
+    "main.css": "/web-developer-tools/static/css/main.2c893251.css",
+    "main.js": "/web-developer-tools/static/js/main.8014192d.js",
     "static/media/primeicons.svg": "/web-developer-tools/static/media/primeicons.c6e2053303524e39530c.svg",
     "static/media/bg.jpg": "/web-developer-tools/static/media/bg.ae3b937fcad9a5057e9d.jpg",
     "static/media/primeicons.eot": "/web-developer-tools/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
     "static/media/primeicons.woff": "/web-developer-tools/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
     "static/media/primeicons.ttf": "/web-developer-tools/static/media/primeicons.91bacab1f083f2795272.ttf",
     "index.html": "/web-developer-tools/index.html",
-    "main.2417f40a.css.map": "/web-developer-tools/static/css/main.2417f40a.css.map",
-    "main.20b30428.js.map": "/web-developer-tools/static/js/main.20b30428.js.map"
+    "main.2c893251.css.map": "/web-developer-tools/static/css/main.2c893251.css.map",
+    "main.8014192d.js.map": "/web-developer-tools/static/js/main.8014192d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2417f40a.css",
-    "static/js/main.20b30428.js"
+    "static/css/main.2c893251.css",
+    "static/js/main.8014192d.js"
   ]
 }
