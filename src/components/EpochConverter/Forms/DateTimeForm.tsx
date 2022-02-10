@@ -22,7 +22,7 @@ const DateTimeForm: React.FC<DateTimeInputPropsInterface> =
             <form className="p-grid p-fluid p-mb-4">
                 <div className="p-col-12 p-md-4 p-sm-6">
                     <Calendar value={dateTimeInputValue}
-                              onChange={onDateTimeChange} stepMinute={2}
+                              onChange={onDateTimeChange}
                               showTime showSeconds/>
                 </div>
                 <div className="p-col-12 p-md-3 p-sm-6">
