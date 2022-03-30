@@ -1,6 +1,10 @@
-import React from "react";
+import React, {MouseEventHandler} from "react";
 import {Button} from "primereact/button";
-import {CopyToClipboardType} from "../../../types/epochConverter";
+
+type CopyToClipboardType = {
+    copyToClipboard: MouseEventHandler<HTMLButtonElement>;
+    copyToClipboardButtonState: 'default' | 'pressed';
+}
 
 const CopyToClipboard: React.FC<CopyToClipboardType> =
     ({copyToClipboard, copyToClipboardButtonState}) => {
@@ -10,6 +14,7 @@ const CopyToClipboard: React.FC<CopyToClipboardType> =
 
         return <Button label={text}
                        icon={icon}
+                       type="button"
                        onClick={copyToClipboard}
                        className="p-button-sm w-100"/>
     }

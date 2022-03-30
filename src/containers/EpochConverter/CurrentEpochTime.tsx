@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import CurrentEpoch
-    from "../../components/EpochConverter/CurrentEpochTime/CurrentEpochTime";
+    from "../../components/EpochConverter/CurrentEpochTime";
 import {getCurrentUnixTime} from "../../utils/calculators/epochConverter";
 import {
     setCurrentUnixTime,

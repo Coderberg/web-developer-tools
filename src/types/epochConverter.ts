@@ -33,11 +33,6 @@ export interface CurrentEpochTimeContainerPropsInterface extends CurrentEpochTim
     setCopyToClipboardState: Function,
 }
 
-export type CopyToClipboardType = {
-    copyToClipboard: MouseEventHandler<HTMLButtonElement>;
-    copyToClipboardButtonState: 'default' | 'pressed';
-}
-
 export interface UnixTimeFormContainerPropsInterface extends UnixTimeFormStateType {
     setUnixTimeInput: Function,
     setEpochToDateResultValue: Function
@@ -48,6 +43,8 @@ export interface UnixTimeInputPropsInterface extends UnixTimeFormStateType {
     onEpochToDateButtonClick: MouseEventHandler<HTMLButtonElement>
 }
 
-export interface CurrentEpochTimeInterface extends CopyToClipboardType {
+export interface CurrentEpochTimeInterface {
+    copyToClipboard: MouseEventHandler<HTMLButtonElement>;
+    copyToClipboardButtonState: 'default' | 'pressed';
     currentUnixTime: string;
 }

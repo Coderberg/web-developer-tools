@@ -1,7 +1,7 @@
 import React from "react";
 import {Chip} from "primereact/chip";
-import {CurrentEpochTimeInterface} from "../../../types/epochConverter";
-import CopyToClipboard from "./CopyToClipboard";
+import {CurrentEpochTimeInterface} from "../../types/epochConverter";
+import CopyToClipboard from "../common/CopyToClipboard";
 
 const CurrentEpochTime: React.FC<CurrentEpochTimeInterface> =
     ({currentUnixTime, copyToClipboard, copyToClipboardButtonState}) =>

@@ -5,7 +5,9 @@ import Menubar from "../../../containers/Menubar/Menubar";
 
 const expectedMenuItems: string[] = [
     'Chmod Calculator',
-    'Unix Timestamp Converter'
+    'Crontab Generator',
+    'Unix Timestamp Converter',
+    'Password Generator',
 ];
 
 render(<Router><Menubar/></Router>);

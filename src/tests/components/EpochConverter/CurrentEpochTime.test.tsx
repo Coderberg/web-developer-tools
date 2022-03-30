@@ -1,6 +1,6 @@
 import {render, screen} from "@testing-library/react";
 import React from "react";
-import CurrentEpochTime from "../../../../components/EpochConverter/CurrentEpochTime/CurrentEpochTime";
+import CurrentEpochTime from "../../../components/EpochConverter/CurrentEpochTime";
 
 const copyToClipboard = jest.fn();
 

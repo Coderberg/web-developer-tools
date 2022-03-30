@@ -18,6 +18,11 @@ const Menubar: React.FC = () => {
             label: 'Unix Timestamp Converter',
             icon: 'pi pi-clock',
             url: '#/unix_timestamp_converter'
+        },
+        {
+            label: 'Password Generator',
+            icon: 'pi pi-shield',
+            url: '#/password_generator'
         }
     ];
 

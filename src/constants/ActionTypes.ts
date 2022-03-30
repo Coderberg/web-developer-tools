@@ -43,3 +43,9 @@ export const SET_MONTH_HAS_ERROR = 'crontab-generator/months/set-has-error';
 export const SET_WEEKDAY_RADIO_BUTTON_VALUE = 'crontab-generator/weekday/set-radio-button-value';
 export const SET_WEEKDAY_OPTION_VALUE = 'crontab-generator/weekday/set-option-value';
 export const SET_WEEKDAY_HAS_ERROR = 'crontab-generator/weekday/set-has-error';
+
+// PasswordGenerator
+export const SET_PASSWORD = 'password-generator/set-password';
+export const SET_PASSWORD_LENGTH = 'password-generator/set-password-length';
+export const SET_CHECKED_PARAM = 'password-generator/set-checked';
+export const SET_COPY_TO_CLIPBOARD_STATE = 'password-generator/set-copy-to-clipboard-state';

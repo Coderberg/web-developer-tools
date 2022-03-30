@@ -75,7 +75,7 @@ describe('<CrontabGenerator/> component', () => {
         const button = screen.getByText('Generate Crontab Line');
         fireEvent.click(screen.getByLabelText('Minutes'));
         fireEvent.click(button);
-        expect(screen.queryByText('Please choose at least one entry in minutes field.')).toBeInTheDocument();
+        expect(screen.getByText('Please choose at least one entry in minutes field.')).toBeInTheDocument();
     });
 
     it('should render toast: Invalid Hours', () => {
@@ -84,7 +84,7 @@ describe('<CrontabGenerator/> component', () => {
         fireEvent.click(screen.getByLabelText('Every Minute'));
         fireEvent.click(screen.getByLabelText('Hours'));
         fireEvent.click(button);
-        expect(screen.queryByText('Please choose at least one entry in hours field.')).toBeInTheDocument();
+        expect(screen.getByText('Please choose at least one entry in hours field.')).toBeInTheDocument();
     });
 
     it('should render toast: Invalid Days', () => {
@@ -93,7 +93,7 @@ describe('<CrontabGenerator/> component', () => {
         fireEvent.click(screen.getByLabelText('Every Hour'));
         fireEvent.click(screen.getByLabelText('Days'));
         fireEvent.click(button);
-        expect(screen.queryByText('Please choose at least one entry in days field.')).toBeInTheDocument();
+        expect(screen.getByText('Please choose at least one entry in days field.')).toBeInTheDocument();
     });
 
     it('should render toast: Invalid Months', () => {
@@ -102,7 +102,7 @@ describe('<CrontabGenerator/> component', () => {
         fireEvent.click(screen.getByLabelText('Every Day'));
         fireEvent.click(screen.getByLabelText('Months'));
         fireEvent.click(button);
-        expect(screen.queryByText('Please choose at least one entry in months field.')).toBeInTheDocument();
+        expect(screen.getByText('Please choose at least one entry in months field.')).toBeInTheDocument();
     });
 
     it('should render toast: Invalid Weekday', () => {
@@ -111,7 +111,7 @@ describe('<CrontabGenerator/> component', () => {
         fireEvent.click(screen.getByLabelText('Every Month'));
         fireEvent.click(screen.getByLabelText('Weekday'));
         fireEvent.click(button);
-        expect(screen.queryByText('Please choose at least one entry in weekday field.')).toBeInTheDocument();
+        expect(screen.getByText('Please choose at least one entry in weekday field.')).toBeInTheDocument();
     });
 
     it('should render toast: Invalid Email', () => {
@@ -122,7 +122,7 @@ describe('<CrontabGenerator/> component', () => {
         const command = screen.getByLabelText('Command To Execute');
         fireEvent.change(command, {target: {value: 'df -P .'}});
         fireEvent.click(button);
-        expect(screen.queryByText('Please enter a valid Email address.')).toBeInTheDocument();
+        expect(screen.getByText('Please enter a valid Email address.')).toBeInTheDocument();
     });
 
     it('should render toast: Invalid Path', () => {
@@ -132,6 +132,6 @@ describe('<CrontabGenerator/> component', () => {
         const command = screen.getByLabelText('Command To Execute');
         fireEvent.change(command, {target: {value: 'df -P .'}});
         fireEvent.click(button);
-        expect(screen.queryByText('Please enter a file path for saving output.')).toBeInTheDocument();
+        expect(screen.getByText('Please enter a file path for saving output.')).toBeInTheDocument();
     });
 });
