@@ -24,13 +24,13 @@ const DateTimeForm = ({
                       }: DateTimeFormContainerPropsInterface) => {
 
     useEffect(() => {
-        if (dateTimeInputValue === undefined) {
-            setDateTimeInput(new Date);
+        if (!dateTimeInputValue) {
+            setDateTimeInput(Date());
         }
-    });
+    }, [dateTimeInputValue, setDateTimeInput]);
 
     const onDateTimeChange = ({target: {value}}: { target: { value: string } }) => {
-        setDateTimeInput(value);
+        setDateTimeInput(value ? value.toString() : null);
 
         if (value === null || value === undefined) {
             setDateToEpochResultValue('');
@@ -54,7 +54,7 @@ const DateTimeForm = ({
         }
     }
 
-    return <DateTimeFormComponent dateTimeInputValue={dateTimeInputValue}
+    return <DateTimeFormComponent dateTimeInputValue={new Date(dateTimeInputValue)}
                                   timezoneInputValue={timezoneInputValue}
                                   onDateTimeChange={onDateTimeChange}
                                   onTimezoneChange={onTimezoneChange}

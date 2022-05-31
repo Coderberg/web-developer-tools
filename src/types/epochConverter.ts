@@ -6,7 +6,7 @@ export type UnixTimeFormStateType = {
 }
 
 export type DateTimeFormState = {
-    dateTimeInputValue: Date | Date[] | undefined;
+    dateTimeInputValue: any;
     timezoneInputValue: 'gmt' | 'local';
     dateToEpochResult: string;
 }
